@@ -1,4 +1,4 @@
-package org.homeworks.collection;
+package org.homeworks.collections;
 
 import java.util.LinkedList;
 
@@ -10,7 +10,6 @@ public class HomeWorkLists {
         for (char letter : letters.toLowerCase().toCharArray()) {
             stackLetters.push(letter);
         }
-        System.out.println(stackLetters.peek());
 
         for (char letter : word.toLowerCase().toCharArray()) {
             if (!stackLetters.removeFirstOccurrence(letter)) {
