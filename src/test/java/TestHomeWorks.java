@@ -123,15 +123,22 @@ class TestHomeWorks {
     // Тесты HomeWorkStreams
     @Test
     void testGetCountOfFreeEmails() {
-        String[] emails = {
+        List<String> emptyList = List.of();
+        assertThat(HomeWorksStreams.getCountOfFreeEmails(emptyList)).isEqualTo(0);
+
+        List<String> emailsList1 = Arrays.asList(
                 "info@gmail.com",
                 "info@yandex.ru",
                 "mk@host.com",
                 "support@hexlet.io",
                 "info@hotmail.com",
-                "support.yandex.ru@host.com"
-        };
-        List<String> emailsList = Arrays.asList(emails);
-        assertThat(HomeWorksStreams.getCountOfFreeEmails(emailsList)).isEqualTo(3);
+                "support.yandex.ru@host.com");
+        assertThat(HomeWorksStreams.getCountOfFreeEmails(emailsList1)).isEqualTo(3);
+
+        List<String> emailsList2 = Arrays.asList(
+                "mk@host.com",
+                "support@hexlet.io",
+                "support.yandex.ru@host.com");
+        assertThat(HomeWorksStreams.getCountOfFreeEmails(emailsList2)).isEqualTo(0);
     }
 }
