@@ -1,7 +1,4 @@
-import org.homeworks.collections.HomeWorkGenerics;
-import org.homeworks.collections.HomeWorkLists;
-import org.homeworks.collections.HomeWorkMaps;
-import org.homeworks.collections.HomeWorkTests;
+import org.homeworks.collections.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
@@ -122,5 +119,19 @@ class TestHomeWorks {
         assertThat(HomeWorkTests.take(numbers1, 0)).isEmpty();
         assertThat(HomeWorkTests.take(numbers1, 2)).isEqualTo(correctlyRes1);
         assertThat(HomeWorkTests.take(numbers2, 8)).isEqualTo(correctlyRes2);
+    }
+    // Тесты HomeWorkStreams
+    @Test
+    void testGetCountOfFreeEmails() {
+        String[] emails = {
+                "info@gmail.com",
+                "info@yandex.ru",
+                "mk@host.com",
+                "support@hexlet.io",
+                "info@hotmail.com",
+                "support.yandex.ru@host.com"
+        };
+        List<String> emailsList = Arrays.asList(emails);
+        assertThat(HomeWorksStreams.getCountOfFreeEmails(emailsList)).isEqualTo(3);
     }
 }
