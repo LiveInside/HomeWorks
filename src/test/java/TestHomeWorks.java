@@ -1,12 +1,10 @@
 import org.homeworks.collections.HomeWorkGenerics;
 import org.homeworks.collections.HomeWorkLists;
 import org.homeworks.collections.HomeWorkMaps;
+import org.homeworks.collections.HomeWorkTests;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -110,7 +108,19 @@ class TestHomeWorks {
         List<Map<String, String>> resultEmpty = HomeWorkGenerics.findWhere(booksEmpty, conditionEmpty);
 
         assertThat(resultEmpty).isEmpty();
-
     }
+    // Тесты HomeWorkTests
+    @Test
+    void testTake() {
+        List<Integer> numbers = new ArrayList<>();
+        List<Integer> numbers1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+        List<Integer> numbers2 = new ArrayList<>(Arrays.asList(7, 3, 10));
+        List<Integer> correctlyRes1 = new ArrayList<>(Arrays.asList(1, 2));
+        List<Integer> correctlyRes2 = new ArrayList<>(Arrays.asList(7, 3, 10));
 
+        assertThat(HomeWorkTests.take(numbers, 3)).isEmpty();
+        assertThat(HomeWorkTests.take(numbers1, 0)).isEmpty();
+        assertThat(HomeWorkTests.take(numbers1, 2)).isEqualTo(correctlyRes1);
+        assertThat(HomeWorkTests.take(numbers2, 8)).isEqualTo(correctlyRes2);
+    }
 }
