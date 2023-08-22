@@ -1,6 +1,5 @@
 package org.homeworks.collections;
 
-import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -10,7 +9,7 @@ import java.time.LocalDate;
 import java.util.stream.Stream;
 
 public class HomeWorksLambdas {
-    public static List<String> takeOldestMans(List<Map<String, String>> users) {
+    public static List<String> takeOldestMans(final List<Map<String, String>> users) {
         return users.stream()
                 .filter(user -> user.get("gender").equals("male"))
                 .sorted(Comparator.comparing(user -> LocalDate.parse(user.get("birthday"))))
@@ -18,7 +17,7 @@ public class HomeWorksLambdas {
                 .collect(Collectors.toList());
     }
 
-    public static String[][] enlargeArrayImage(String[][] image) {
+    public static String[][] enlargeArrayImage(final String[][] image) {
         int rows = image.length;
         int cols = image[0].length;
 

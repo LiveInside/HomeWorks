@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ad4b10-ba30-4326-b90c-3b1c69b745ab" name="Changes" comment="Complete Homework &quot;Streams&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/homeworks/collections/HomeWorksLambdas.java" afterDir="false" />
+    <list default="true" id="b6ad4b10-ba30-4326-b90c-3b1c69b745ab" name="Changes" comment="Complete Homework &quot;Lambdas&quot;">
+      <change afterPath="$PROJECT_DIR$/s.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/homeworks/collections/HomeWorkAdvancedStreams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/homeworks/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/homeworks/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/homeworks/collections/HomeWorksLambdas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/homeworks/collections/HomeWorksLambdas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestHomeWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestHomeWorks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +67,10 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects IDEA\HomeWorks" />
+      <recent name="D:\Projects IDEA\HomeWorks\src\main\java\org\homeworks" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -72,29 +78,19 @@
       <recent name="org.homeworks.collection" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestHomeWorks.testEnlargeArrayImage">
-    <configuration name="TestHomeWorks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;TestHomeWorks&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Gradle.TestHomeWorks.testGetForwardedVariables">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.homeworks.Main" />
+      <module name="HomeWorks.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.homeworks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TestHomeWorks.testEnlargeArrayImage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -142,7 +138,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestHomeWorks.testTake" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestHomeWorks.testGetForwardedVariables" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -155,7 +151,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TestHomeWorks.testTake&quot;" />
+            <option value="&quot;TestHomeWorks.testGetForwardedVariables&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -190,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestHomeWorks.testGetForwardedVariables" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.TestHomeWorks.testEnlargeArrayImage" />
         <item itemvalue="Gradle.TestHomeWorks.testTakeOldestMans" />
         <item itemvalue="Gradle.TestHomeWorks.testGetCountOfFreeEmails" />
-        <item itemvalue="Gradle.TestHomeWorks.testTake" />
-        <item itemvalue="Gradle.TestHomeWorks" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +207,8 @@
       <workItem from="1692356716053" duration="5590000" />
       <workItem from="1692602161203" duration="6555000" />
       <workItem from="1692613161365" duration="6518000" />
-      <workItem from="1692633444486" duration="6446000" />
+      <workItem from="1692633444486" duration="6647000" />
+      <workItem from="1692697718514" duration="8589000" />
     </task>
     <task id="LOCAL-00001" summary="Add tests">
       <created>1692276604067</created>
@@ -262,11 +259,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692621166199</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Complete Homework &quot;Lambdas&quot;">
+      <created>1692639995668</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692639995668</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -298,6 +305,7 @@
     <MESSAGE value="Complete Homework &quot;Tests&quot;" />
     <MESSAGE value="Complete Homework &quot;Streams&quot;" />
     <MESSAGE value="Add test &quot;Streams&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add test &quot;Streams&quot;" />
+    <MESSAGE value="Complete Homework &quot;Lambdas&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete Homework &quot;Lambdas&quot;" />
   </component>
 </project>
