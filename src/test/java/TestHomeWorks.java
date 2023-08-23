@@ -213,4 +213,30 @@ class TestHomeWorks {
         assertThat(HomeWorkAdvancedStreams.getForwardedVariables1(contentNoMatches))
                 .isEmpty();
     }
+    @Test
+    void testGenDiff() {
+        Map<String, Object> data1 = new HashMap<>(
+                Map.of("one", "eon", "two", "two", "four", true)
+        );
+        Map<String, Object> data2 = new HashMap<>(
+                Map.of("two", "own", "zero", 4, "four", true)
+        );
+        Map<String, Object> answer = new HashMap<>(
+                Map.of("four", "unchanged", "one", "deleted", "two", "changed", "zero", "added")
+        );
+
+        assertThat(HomeWorkSets.genDiff(data1, data2))
+                .isEqualTo(answer);
+
+        Map<String, Object> mapEmpty = new HashMap<>();
+        Map<String, Object> data2Empty = new HashMap<>(
+                Map.of("two", "own", "zero", 4, "four", true)
+        );
+        Map<String, Object> answer2 = new HashMap<>(
+                Map.of("two", "added", "zero", "added", "four", "added")
+        );
+
+        assertThat(HomeWorkSets.genDiff(mapEmpty, data2Empty))
+                .isEqualTo(answer2);
+    }
 }
